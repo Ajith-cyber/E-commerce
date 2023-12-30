@@ -32,3 +32,4 @@ router.route('/admin/product/:id').put(isAuthenticatedUser, authorizeRoles('admi
 router.route('/admin/reviews').get(isAuthenticatedUser, authorizeRoles('admin'),getReviews)
 router.route('/admin/review').delete(isAuthenticatedUser, authorizeRoles('admin'),deleteReview)
 module.exports = router;
+
